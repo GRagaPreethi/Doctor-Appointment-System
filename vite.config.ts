@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
+// Export Vite config
 export default defineConfig(async () => {
   const isReplit = process.env.NODE_ENV !== "production" && process.env.REPL_ID !== undefined;
 
@@ -26,12 +27,7 @@ export default defineConfig(async () => {
       },
     },
     build: {
-      // You can use either this:
-      outDir: "../dist/public",
-
-      // Or this (recommended):
-      // outDir: path.resolve(__dirname, "dist/public"),
-      
+      outDir: path.resolve(__dirname, "dist/public"),
       emptyOutDir: true,
     },
     server: {
