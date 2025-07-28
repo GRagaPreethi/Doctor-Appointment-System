@@ -46,6 +46,8 @@
     "zod-validation-error": "^3.4.0",
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-*": "*"
+    "@radix-ui/react-dialog": "^1.0.0",
+    "@radix-ui/react-dropdown-menu": "^1.0.0"
   },
   "devDependencies": {
     "vite": "^5.4.19",
